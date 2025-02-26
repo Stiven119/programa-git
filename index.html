@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/5cb9c03787ab7860fdd5dc4d13a72043-diseno-de-logo-de-biblioteca-digital.webp" alt="Logotipo de la Biblioteca" width="120">
+            <h1>Biblioteca Digital</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="intro">
+            <h2>Bienvenidos a la Biblioteca Digital</h2>
+            <p>Explora miles de libros electrónicos, desde los más clásicos hasta los más recientes. ¡Accede al conocimiento de manera gratuita y fácil!</p>
+            <a href="#catalogo" class="btn">Explorar Catálogo</a>
+        </section>
+
+        <!-- Sección de Catálogo -->
+        <section id="catalogo">
+            <h2>Catálogo de Libros</h2>
+            <div class="libros-grid">
+                <div class="libro">
+                    <img src="img/don-quijote-de-la-mancha-coleccion-alfaguara-clasicos.jpg" alt="Don Quijote de la Mancha">
+                    <h3>Don Quijote de la Mancha</h3>
+                    <p>Autor: Miguel de Cervantes</p>
+                    <button class="btn">Leer</button>
+                </div>
+                <div class="libro">
+                    <img src="img/1984.avif" alt="1984">
+                    <h3>1984</h3>
+                    <p>Autor: George Orwell</p>
+                    <button class="btn">Leer</button>
+                </div>
+                <div class="libro">
+                    <img src="img/f.scott.jpg" alt="El Gran Gatsby">
+                    <h3>El Gran Gatsby</h3>
+                    <p>Autor: F. Scott Fitzgerald</p>
+                    <button class="btn">Leer</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Registro -->
+        <section id="registro">
+            <h2>Registrarse</h2>
+            <form action="/registro" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" class="btn">Registrar</button>
+            </form>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna duda, contáctanos a través de nuestro formulario de contacto o mediante el correo electrónico.</p>
+            <form id="contactForm">
+                <label for="nombreContacto">Nombre:</label>
+                <input type="text" id="nombreContacto" name="nombreContacto" required>
+                <label for="emailContacto">Correo Electrónico:</label>
+                <input type="email" id="emailContacto" name="emailContacto" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Sección de Tabla de Libros -->
+        <section id="tabla-libros">
+            <h2>Lista de Libros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Don Quijote de la Mancha</td>
+                        <td>Miguel de Cervantes</td>
+                        <td><button class="btn">Leer</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1984</td>
+                        <td>George Orwell</td>
+                        <td><button class="btn">Leer</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>El Gran Gatsby</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td><button class="btn">Leer</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Biblioteca Digital. Todos los derechos reservados.</p>
+        <p>Contacto: contacto@bibliotecadigital.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
